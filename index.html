@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <figure>
+      <img src="./images/logo.svg" alt="logo">
+    </figure>
+  
+    <form id="form"  novalidate>
+      
+
+      <section class="user-input">
+        <section class="bill">    
+          
+          <label  for="bill">
+            Bill
+          </label>
+          <div class="bill-input">
+            <img src="./images/icon-dollar.svg" alt="icon-dollar">
+            <input id="bill" inputmode="numeric" type="number" placeholder="0">
+          </div>
+              
+        </section>
+            
+        <section class="tiping">
+          <p>Select Tip %</p>
+          <div class="tip-options">
+  
+            <input id="5%" class="tip" type="radio" name="tip" value="5%">
+            <label class="tip-lbl" for="5%">
+              5%   
+            </label>
+  
+            <input id="10%" class="tip" type="radio" name="tip" value="10%">
+            <label class="tip-lbl" for="10%">
+              10%
+            </label>
+  
+            <input id="15%" class="tip" type="radio" name="tip" value="15%">
+            <label class="tip-lbl" for="15%">
+              15%
+            </label>
+  
+            <input id="25%" class="tip" type="radio" name="tip" value="25%">
+            <label class="tip-lbl" for="25%">
+              25%
+            </label>
+  
+            <input id="50%" class="tip" type="radio" name="tip" value="50%">
+            <label class="tip-lbl" for="50%">
+              50%
+            </label>
+  
+            <input class="custom" type="number" placeholder="Custom">
+          </div>
+        </section>
+  
+        <section class="people">
+  
+              
+          <div class="people-lbl">
+            <label for="people">Number of People</label><span class="err">Can't be zero</span> 
+          </div>
+          
+          <div class="people-input">
+            <img src="./images/icon-person.svg" alt="icon-person">
+            <input id="people" type="number" placeholder="0" >  
+          </div>  
+             
+              
+        </section>
+      </section>
+      
+      
+      <section class="result">
+          
+        <div class="result-field">
+            
+          <p class="total-amount">
+            Tip Amount<br>
+            <span class="person">/ person</span>
+          </p>
+      
+            
+          <p id="tip-perperson" class="perperson-result">$0.00</p>
+              
+        </div>
+
+        <div class="result-field" >
+          <p class="total-amount">
+            Total <br>
+            <span class="person">/ person</span>
+          </p>
+          <p id="bill-perperson" class="perperson-result">$0.00</p>
+        </div>
+            
+        <button id="btn" type="submit">RESET</button>
+        </section>
+        
+    </form>
+  
+  </main>  
+</body>
+<script src="./script.js"></script>
+</html>
